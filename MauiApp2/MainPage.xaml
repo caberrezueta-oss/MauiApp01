@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15" VerticalOptions="Center">
+
+            <!-- Título -->
+            <Label Text="Calculadora de Aporte IESS"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#0056B3"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20" />
+
+            <!-- Campo Nombre -->
+            <Label Text="Nombre:" FontAttributes="Bold" TextColor="#333333" />
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingrese su nombre"
+                   PlaceholderColor="#888888"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   Keyboard="Text" />
+
+            <!-- Campo Apellido -->
+            <Label Text="Apellido:" FontAttributes="Bold" TextColor="#333333" />
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingrese su apellido"
+                   PlaceholderColor="#888888"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   Keyboard="Text" />
+
+            <!-- Campo Edad -->
+            <Label Text="Edad:" FontAttributes="Bold" TextColor="#333333" />
+            <Entry x:Name="txtEdad"
+                   Placeholder="Ingrese su edad"
+                   PlaceholderColor="#888888"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   Keyboard="Numeric" />
+
+            <!-- Campo Salario -->
+            <Label Text="Salario ($):" FontAttributes="Bold" TextColor="#333333" />
+            <Entry x:Name="txtSalario"
+                   Placeholder="Ingrese su salario mensual"
+                   PlaceholderColor="#888888"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   Keyboard="Numeric" />
+
+            <!-- Botón de Cálculo -->
+            <Button Text="Calcular Aporte"
+                    Clicked="OnCalcularClicked"
+                    BackgroundColor="#0056B3"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Margin="0,20,0,0"
+                    FontAttributes="Bold" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
